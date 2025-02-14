@@ -1,0 +1,30 @@
+[server]
+enableStaticServing = true
+
+[theme]
+# Maxa AI
+# What's missing/doesn't look great:
+# - sidebar shadow instead of border
+# - border around dataframe is a bit too light
+# - large elements are too rounded
+# - they also have a secondary color defined
+# - they also have colors for info/warning/etc
+# - they have a separate heading font (Poppins)
+# - they have smaller top padding
+# - their expander is colored
+primaryColor = "#1476ff"
+backgroundColor = "#F7F9FC"
+secondaryBackgroundColor = "#F0F2F6"
+sidebarBackgroundColor = "#FFFFFF"
+sidebarSecondaryBackgroundColor = "#F0F2F6"
+sidebarTextColor = "#262730"
+textColor = "#262730"
+borderColor = "#E7E7E8"
+showBorderAroundInputs = false
+roundness = 1
+font = "Inter"
+
+[[theme.fontFaces]]
+url = "http://localhost:8502/app/static/Inter-VariableFont_opsz,wght.ttf"
+family = "Inter"
+font-weight = "100 900"
