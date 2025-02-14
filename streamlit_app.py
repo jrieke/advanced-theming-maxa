@@ -19,6 +19,27 @@ if st.checkbox("Enable CSS hacks", True):
         .stSidebar {
             box-shadow: rgba(0, 0, 0, 0.16) -2rem 0px 2rem 2rem;
         }
+        
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentInfo"]) {
+            background-color: #469fb5 !important;
+            color: #ffffff !important;
+        }
+        
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentWarning"]) {
+            background-color: #f8c338 !important;
+            color: #ffffff !important;
+        }
+        
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentSuccess"]) {
+            background-color: #5bbe5d !important;
+            color: #ffffff !important;
+        }
+        
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentError"]) {
+            background-color: #ef5d51 !important;
+            color: #ffffff !important;
+        }
+        
         </style>
         """
     )
