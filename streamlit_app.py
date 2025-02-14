@@ -12,6 +12,17 @@ st.set_page_config("Maxa AI theme", "🤖", initial_sidebar_state="collapsed")
 st.logo("https://www.maxa.ai/assets/themes/maxa/img/maxa-logo_colors.svg", size="large")
 st.title("Maxa AI theme")
 
+if st.checkbox("Enable CSS hacks", True):
+    st.html(
+        """
+        <style>
+        .stSidebar {
+            box-shadow: rgba(0, 0, 0, 0.16) -2rem 0px 2rem 2rem;
+        }
+        </style>
+        """
+    )
+
 
 def page1():
     pass
