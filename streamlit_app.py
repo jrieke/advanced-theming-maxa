@@ -20,6 +20,10 @@ if st.checkbox("Enable CSS hacks", True):
             box-shadow: rgba(0, 0, 0, 0.16) -2rem 0px 2rem 2rem;
         }
         
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Poppins" !important;
+        }
+        
         [data-testid="stAlertContainer"]:has([data-testid="stAlertContentInfo"]) {
             background-color: #469fb5 !important;
             color: #ffffff !important;
