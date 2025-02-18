@@ -13,36 +13,47 @@ st.logo("https://www.maxa.ai/assets/themes/maxa/img/maxa-logo_colors.svg", size=
 st.title("Maxa AI theme")
 
 if st.checkbox("Enable CSS hacks", True):
+    headingFont = "Poppins"
+    
+    infoBackgroundColor = "#469fb5"
+    infoTextColor = "#ffffff"
+    warningBackgroundColor = "#f8c338"
+    warningTextColor = "#ffffff"
+    successBackgroundColor = "#5bbe5d"
+    successTextColor = "#ffffff"
+    errorBackgroundColor = "#ef5d51"
+    errorTextColor = "#ffffff"
+    
     st.html(
-        """
+        f"""
         <style>
-        .stSidebar {
+        .stSidebar {{   
             box-shadow: rgba(0, 0, 0, 0.16) -2rem 0px 2rem 2rem;
-        }
+        }}
         
-        h1, h2, h3, h4, h5, h6 {
-            font-family: "Poppins" !important;
-        }
+        h1, h2, h3, h4, h5, h6 {{
+            font-family: "{headingFont}" !important;
+        }}
         
-        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentInfo"]) {
-            background-color: #469fb5 !important;
-            color: #ffffff !important;
-        }
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentInfo"]) {{
+            background-color: {infoBackgroundColor} !important;
+            color: {infoTextColor} !important;
+        }}
         
-        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentWarning"]) {
-            background-color: #f8c338 !important;
-            color: #ffffff !important;
-        }
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentWarning"]) {{
+            background-color: {warningBackgroundColor} !important;
+            color: {warningTextColor} !important;
+        }}
         
-        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentSuccess"]) {
-            background-color: #5bbe5d !important;
-            color: #ffffff !important;
-        }
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentSuccess"]) {{
+            background-color: {successBackgroundColor} !important;
+            color: {successTextColor} !important;
+        }}
         
-        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentError"]) {
-            background-color: #ef5d51 !important;
-            color: #ffffff !important;
-        }
+        [data-testid="stAlertContainer"]:has([data-testid="stAlertContentError"]) {{
+            background-color: {errorBackgroundColor} !important;
+            color: {errorTextColor} !important;
+        }}
         
         </style>
         """
