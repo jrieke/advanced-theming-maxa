@@ -13,7 +13,6 @@ st.logo("https://www.maxa.ai/assets/themes/maxa/img/maxa-logo_colors.svg", size=
 st.title("Maxa AI theme")
 
 if st.checkbox("Enable CSS hacks", True):
-    headingFont = "Poppins"
     
     infoBackgroundColor = "#469fb5"
     infoTextColor = "#ffffff"
@@ -27,13 +26,6 @@ if st.checkbox("Enable CSS hacks", True):
     st.html(
         f"""
         <style>
-        .stSidebar {{   
-            box-shadow: rgba(0, 0, 0, 0.16) -2rem 0px 2rem 2rem;
-        }}
-        
-        h1, h2, h3, h4, h5, h6 {{
-            font-family: "{headingFont}" !important;
-        }}
         
         [data-testid="stAlertContainer"]:has([data-testid="stAlertContentInfo"]) {{
             background-color: {infoBackgroundColor} !important;
